@@ -127,7 +127,7 @@ blks[nblk*16-2]=str.length * 8
 return blks;}
 
 function strw2binl(str){
-var nblk=((str.length+4)>>5)+1 // number of 16-word blocks
+var nblk=((str.length+4)>>5)+1
 var blks=new Array(nblk * 16)
 for(var i=0; i < nblk * 16; i++) blks[i]=0
 for(var i=0; i < str.length; i++)
